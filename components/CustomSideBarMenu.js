@@ -15,14 +15,13 @@ export default class CustomSideBarMenu extends React.Component{
                 <View style = {{flex : 0.1, justifyContent:'flex-end',paddingBottom : 10}}>
                     <TouchableOpacity
                     style = {{
-                        backgroundColor : 'black',
-                        width : 90,
+                        width : 100,
                         height : 30,
+                        backgroundColor : 'cyan',
                         borderWidth : 2,
-                        borderRadius : 11,
-                        borderColor : 'blue',
-                        alignSelf : 'center'
-                    }}
+                        alignSelf : 'center',
+                        borderRadius : 15,
+                      }}
                     onPress = {() => {
                         this.props.navigation.navigate('LoginScreen')
                         firebase.auth().signOut()
